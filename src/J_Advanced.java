@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.stream.IntStream;
 
 
-/* Advanced solution for Problem J: simulates the actual path of the fly. */
+/* Advanced solution for Problem J: tracks the actual path of the fly. */
 public class J_Advanced {
 
     private static final double EPS = 1e-9;
