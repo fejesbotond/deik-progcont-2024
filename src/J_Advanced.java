@@ -168,20 +168,20 @@ public class J_Advanced {
 
     public static void main(String[] args) {
         var scanner = new Scanner(System.in);
-        var C1 = new Vec2(scanner.nextInt(), scanner.nextInt());
-        double v1 = scanner.nextInt();
-        var C2 = new Vec2(scanner.nextInt(), scanner.nextInt());
-        double v2 = scanner.nextInt();
-        var C3 = new Vec2(scanner.nextInt(), scanner.nextInt());
-        double v3 = scanner.nextInt();
+        var C = new Vec2[3];
+        var V = new double[3];
+        for (int i = 0; i < 3; i++) {
+            int x = scanner.nextInt();
+            int y = scanner.nextInt();
+            double v = scanner.nextInt();
+            C[i] = new Vec2(x, y);
+            V[i] = v;
+        }
 
-        Vec2 M = new Vec2(scanner.nextInt(), scanner.nextInt());
-        double distance = scanner.nextInt();
-        Vec2 L = new Vec2(scanner.nextInt(), scanner.nextInt());
-        double vl = scanner.nextInt();
-
-        var C = new Vec2[]{C1, C2, C3};
-        var V = new double[]{v1, v2, v3};
+        var M = new Vec2(scanner.nextInt(), scanner.nextInt());
+        double distance = scanner.nextDouble();
+        var L = new Vec2(scanner.nextInt(), scanner.nextInt());
+        double vl = scanner.nextDouble();
 
         double result = solve(C, V, M, L, vl, distance);
 
