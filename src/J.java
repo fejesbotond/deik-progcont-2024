@@ -99,7 +99,7 @@ public class J {
         if (floatEqual(discriminant, 0.0)) {
             t = -B / (2.0 * A);
         } else if (discriminant > EPS) {
-            double sqrtD = Math.sqrt(Math.max(0.0, discriminant));
+            double sqrtD = Math.sqrt(discriminant);
             double t1 = (-B - sqrtD) / (2.0 * A);
             double t2 = (-B + sqrtD) / (2.0 * A);
             if (t1 > EPS && t2 > EPS)
